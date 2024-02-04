@@ -17,5 +17,13 @@ data class RickAndMortyInfoDTO(
 data class RickAndMortyCharacterDTO(
     val name: String,
     val status: String,
+    val gender: String,
+    val origin: RickAndMortyCharacterExtraDTO,
+    val location: RickAndMortyCharacterExtraDTO,
     val image: String
+)
+
+@Serializable
+data class RickAndMortyCharacterExtraDTO(
+    val name: String
 )

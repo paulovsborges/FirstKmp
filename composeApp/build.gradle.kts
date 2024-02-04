@@ -18,7 +18,7 @@ kotlin {
             }
         }
     }
-    
+
     listOf(
         iosX64(),
         iosArm64(),
@@ -29,9 +29,9 @@ kotlin {
             isStatic = true
         }
     }
-    
+
     sourceSets {
-        
+
         androidMain.dependencies {
             implementation(libs.compose.ui.tooling.preview)
             implementation(libs.androidx.activity.compose)
@@ -55,9 +55,12 @@ kotlin {
             implementation(libs.ktor.client.negotiation)
             implementation(libs.ktor.client.serialization)
             implementation(libs.kotlinx.coroutines.core)
+//
+//            val coilVersion = "3.0.0-alpha01"
+//            implementation("io.coil-kt.coil3:coil-compose:$coilVersion")
+//            implementation("io.coil-kt.coil3:coil-network:$coilVersion")
 
-            //Serialization
-//            implementation("io.ktor:ktor-serialization-kotlinx-json:$ktorVersion")
+            implementation("media.kamel:kamel-image:0.9.0")
         }
 
         iosMain.dependencies {
@@ -84,6 +87,7 @@ android {
     packaging {
         resources {
             excludes += "/META-INF/{AL2.0,LGPL2.1}"
+            excludes += "/META-INF/versions/**"
         }
     }
     buildTypes {
