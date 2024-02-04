@@ -5,7 +5,7 @@ import kotlinx.serialization.Serializable
 @Serializable
 data class RickAndMortyDTO(
     val info: RickAndMortyInfoDTO,
-    val results: List<RickAndMortyCharacter>
+    val results: List<RickAndMortyCharacterDTO>
 )
 
 @Serializable
@@ -14,7 +14,7 @@ data class RickAndMortyInfoDTO(
 )
 
 @Serializable
-data class RickAndMortyCharacter(
+data class RickAndMortyCharacterDTO(
     val name: String,
     val status: String,
     val image: String

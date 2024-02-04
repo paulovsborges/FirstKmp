@@ -1,6 +1,6 @@
-package character
+package presentation.character
 
-import AppColors
+import presentation.AppColors
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -11,13 +11,20 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import datasource.RickAndMortyCharacterDTO
 
 @Composable
-fun ComposeCharacterCard() {
+fun ComposeCharacterCard(
+    character: RickAndMortyCharacterDTO
+) {
 
     Column(
         modifier = Modifier.fillMaxWidth().height(100.dp).background(AppColors.gray),
     ) {
-        Text("Character name", color = Color.White, fontSize = 20.sp)
+        Text(
+            text = character.name,
+            color = Color.White,
+            fontSize = 20.sp
+        )
     }
 }

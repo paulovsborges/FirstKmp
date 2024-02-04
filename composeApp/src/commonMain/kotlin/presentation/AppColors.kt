@@ -1,3 +1,5 @@
+package presentation
+
 import androidx.compose.ui.graphics.Color
 
 object AppColors {
