@@ -7,5 +7,6 @@
 * [Kamel](https://github.com/Kamel-Media/Kamel)
 * [Ktor](https://ktor.io/docs/welcome.html)
 * [Jetpack Compose](https://www.jetbrains.com/lp/compose-multiplatform/)
+* [Rick and Morty API](https://rickandmortyapi.com/)
 
 <img width="984" alt="image" src="https://github.com/paulovsborges/FirstKmp/assets/82162410/f33a1f94-0b1d-4ac7-adab-107e89a020c8">
