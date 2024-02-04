@@ -1,6 +1,6 @@
 ## Rick and Morty API with KMP
 
-### Very simple application just so i can get familiar with this new tecnology entirely build using Jetpack Compose
+### Very simple application just so i can get familiar with this new tecnology, entirely build using Jetpack Compose
 
 ### Some tools used on this project:
 
