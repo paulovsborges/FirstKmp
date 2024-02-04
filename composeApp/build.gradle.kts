@@ -5,9 +5,7 @@ plugins {
     alias(libs.plugins.kotlinMultiplatform)
     alias(libs.plugins.androidApplication)
     alias(libs.plugins.jetbrainsCompose)
-//    alias(libs.plugins.serialization.jvm)
-//    alias(libs.plugins.serialization.core)
-    kotlin("plugin.serialization") version "1.9.22"
+    alias(libs.plugins.kotlinSerialization)
 }
 
 kotlin {
@@ -47,20 +45,13 @@ kotlin {
             @OptIn(ExperimentalComposeLibrary::class)
             implementation(compose.components.resources)
 
-            // KotlinX time
-            implementation("org.jetbrains.kotlinx:kotlinx-datetime:0.4.1")
-
             // Ktor
             implementation(libs.ktor.client.core)
             implementation(libs.ktor.client.negotiation)
             implementation(libs.ktor.client.serialization)
             implementation(libs.kotlinx.coroutines.core)
-//
-//            val coilVersion = "3.0.0-alpha01"
-//            implementation("io.coil-kt.coil3:coil-compose:$coilVersion")
-//            implementation("io.coil-kt.coil3:coil-network:$coilVersion")
 
-            implementation("media.kamel:kamel-image:0.9.0")
+            implementation(libs.kamel)
         }
 
         iosMain.dependencies {
