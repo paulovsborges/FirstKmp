@@ -1,14 +1,11 @@
-This is a Kotlin Multiplatform project targeting Android, iOS.
+## Rick and Morty API with KMP
 
-* `/composeApp` is for code that will be shared across your Compose Multiplatform applications.
-  It contains several subfolders:
-  - `commonMain` is for code that’s common for all targets.
-  - Other folders are for Kotlin code that will be compiled for only the platform indicated in the folder name.
-    For example, if you want to use Apple’s CoreCrypto for the iOS part of your Kotlin app,
-    `iosMain` would be the right folder for such calls.
+### Very simple application just so i can get familiar with this new tecnology entirely build using Jetpack Compose
 
-* `/iosApp` contains iOS applications. Even if you’re sharing your UI with Compose Multiplatform, 
-  you need this entry point for your iOS app. This is also where you should add SwiftUI code for your project.
+### Some tools used on this project:
 
+* [Kamel](https://github.com/Kamel-Media/Kamel)
+* [Ktor](https://ktor.io/docs/welcome.html)
+* [Jetpack Compose](https://www.jetbrains.com/lp/compose-multiplatform/)
 
-Learn more about [Kotlin Multiplatform](https://www.jetbrains.com/help/kotlin-multiplatform-dev/get-started.html)…
+<img width="984" alt="image" src="https://github.com/paulovsborges/FirstKmp/assets/82162410/f33a1f94-0b1d-4ac7-adab-107e89a020c8">
